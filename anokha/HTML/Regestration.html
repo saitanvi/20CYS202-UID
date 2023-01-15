@@ -1,0 +1,238 @@
+<!--
+Authors:  Sri Sai Tanvi Sonti
+Created Date:  15 Nov 2022
+Updated Date: 15 Jan 2023
+Base Template: No
+Description: Registration page of Anokha website
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Anokha Registration </title>
+		<link rel="icon"  type="image/x-icon" href="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2021/02/7005-3.jpg">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+  background-color: #79B4B7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 40px;
+  background-color: #FEFBF3;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0 15px 0;
+  display: inline-block;
+  border: none;
+  background: #FFFFFF;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #FFFFFF;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #9D9D9D;
+  margin-bottom: 30px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #9D9D9D; 
+  color: white;
+  padding: 16px 20px;
+  margin: 18px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+
+.signin {
+  background-color: #65647C; 
+  text-align: center;
+}
+</style>
+	</head>
+<body>
+<div class="navbar">
+  <a href="#">Registration</a>
+  <a href="./login.html#">Login</a>
+  <a href="./gallery.html#">Gallery</a>
+  <a href="./events.html#">Events</a>
+  <a href="./contact.html#">Contact Us</a>
+  <a href="./mainpage.html#" class="right">Home</a>
+</div>
+<form>
+  <div class="container">
+		<p><img src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2021/02/7005-3.jpg" width="100" height="100" align="right"></p>
+			<h1><center>Anokha Register</center></h1>
+		<p><b>Please fill in this form for registration.</b></p>
+			<hr>
+<fieldset>
+    <label for="Name"><b>Name</b></label>
+    <input type="text" placeholder="Enter your Name"  name="Name"id="Name" onchange="NameCheck()" required/>
+<br>
+<br>
+<lable for="roll number"><b>Roll Number</b></lable>
+<input type="number" name="student_number" min="1" max="95" required/>
+<br>
+<br>
+<label for="department"><b>Department</b></label>
+<select id="department" name="Department">
+    <option value="Cyber">Cyber</option>
+    <option value="CSE">CSE</option>
+    <option value="AI">AI</option>
+    <option value="Data Science">Data Science</option>
+    <option value="EEE">EEE</option>
+    <option value="Mechanical">Mechanical</option>
+    <option value="Civil">Civil</option>
+    <option value="ARE">ARE</option>
+    <option value="CEN">CEN</option>
+  </select>
+<br>
+<br>
+<label for="phone"><b>Phone Number</b></label>
+<input type="tel" name="phone_number" required/>
+<br>
+<br>
+<lable for="gender"><b>Gender</b></lable>
+ <input type="radio" value="none" id="gender" name="gender" />
+ <label for="male" class="radio">Male</label>
+ <input type="radio" value="none" id="female" name="gender" />
+  <label for="female" class="radio">Female</label>
+<input type="radio" value="none" id="others" name="gender" />
+  <label for="others" class="radio">Others</label>
+<br>
+<br>
+<lable for="year of study"><b>Year of study</b></lable>
+ <input type="radio" value="none" id="1st year" name="1st year" />
+ <input type="radio" value="none" id="2nd year" name="2st year" />
+  <label for="2nd year" class="radio">2nd year</label>
+<input type="radio" value="none" id="3rd year" name="3rd year"/>
+  <label for="3rd year" class="radio">3rd year</label>
+<input type="radio" value="none" id="4th year" name="4th year" />
+  <label for="4th year" class="radio">4th year</label>
+<br>
+<br>
+<label for="birthday"><b>Birthday</b></label>
+  <input type="date" id="birthday" name="birthday">
+<br>
+</fieldset>
+<br>
+<br>
+<fieldset>
+		<label for="workshops"><b>Workshops</b></label>
+		<p><label> <input type="checkbox" name="ws" value="Data Science"> Data Science </label></p>
+		<p><label> <input type="checkbox" name="ws" value="Python"> Python </label></p>
+		<p><label> <input type="checkbox" name="ws" value="LabView"> LabView </label></p>
+		<p><label> <input type="checkbox" name="ws" value="Spectron"> Spectron </label></p>
+		<p><label> <input type="checkbox" name="ws" value="Quantum Computing"> Quantum Computing </label></p>
+		<p><label> <input type="checkbox" name="ws" value="Winning Hacks made Easier"> Winning Hacks made Easier </label></p>
+		<p><label> <input type="checkbox" name="ws" value="IoT"> IoT </label></p>
+</fieldset>
+<br>
+<br>
+<fieldset>
+  <label for="email"><b>Email</b></label>
+  <input type="text" placeholder="Enter Email" name="email" id="email" required>
+<br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+<br>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    
+<br>
+<br>
+<label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+</fieldset>
+</hr>
+<br>
+<br>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider"></span>
+</label>
+<label><b> Do you want to recieve emails regarding anokha?</b> </label>
+<br>
+<br>
+<label for="Upload scanned ID"><b>Uploade scanned ID for verification</b><br>
+<input type="file" id="myFile" name="filename">
+</label>
+<br>
+<br>
+<label for="any comment"><b>Any comment</b></label><br>
+<textarea name="message" rows="10" cols="50"></textarea>
+<p><b>By creating an account you agree to our </b><a href="#">Terms & Privacy</a>.</p>
+
+ <button type="submit" class="registerbtn"><b>Register</b></button>
+  </div>
+  
+  <div class="container signin">
+    <p><b>Already registered? </b><a href="./login.html#"><b>Login</b> </a>.</p>
+  </div>
+</form>
+<script>
+  function NameCheck() {
+	var x = document.getElementById("Name").value;
+	console.log(x);
+	var Regexp = "!@#$%^&*";
+		if(x.match(Regexp)){
+		window.alert("Special characters found in first name");
+		}
+}
+</script>
+</body>
+</html>

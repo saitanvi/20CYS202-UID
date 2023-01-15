@@ -1,0 +1,126 @@
+<!--
+Authors:  Sri Sai Tanvi Sonti
+Created Date:  15 Nov 2022
+Updated Date: 15 Jan 2023
+Base Template: No
+Description: Contact page of Anokha website
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anokha Contact</title>
+<link rel="icon"  type="image/x-icon" href="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2021/02/7005-3.jpg">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	margin: 0;
+	background:#E9D5DA;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  resize: verticle;
+}
+
+input[type=submit] {
+  background-color: #4D4C7D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+form{    
+    text-align: center;    
+    font-family: Calibri;    
+    font-size: 20px;    
+       
+    width: 600px;    
+    margin: 10px auto;    
+    }
+input[type=submit]:hover {
+  background-color: #4D4C7D;
+}
+
+.container {
+  border-radius: 70px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #363062;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="./Regestration.html#">Registration</a>
+  <a href="./login.html#">Login</a>
+  <a href="./gallery.html#">Gallery</a>
+  <a href="./events.html#">Events</a>
+  <a href="#">Contact Us</a>
+  <a href="./mainpage.html#" class="right">Home</a>
+</div>
+<br>
+<h1><center>CONTACT US</center></h1>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email">
+
+    
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something" style="height:100px"></textarea>
+
+   <center><input type="submit" value="Submit"></center>
+  </form>
+</div>
+</body>
+ <footer>
+            <p>Copyright For UI Anokha page</p>
+            <p>Designed by Sri Sai Tanvi Sonti - CB.EN.U4CYS21072 of II Year Btech CYS</p>
+            <P>Amrita Vishwa Vidyapeetham - Coimbatore </P>
+</footer>
+</html>
